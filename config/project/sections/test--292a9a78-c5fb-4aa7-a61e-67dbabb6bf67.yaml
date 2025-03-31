@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 128dc80f-cc87-4da3-b7e0-20ad7ab35a90 # test entries
+handle: test
+maxAuthors: 1
+name: test
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fe6fc921-5409-444c-9b05-4746118e8c68: # blomsterform
+    enabledByDefault: true
+    hasUrls: true
+    template: test/_entry.twig
+    uriFormat: 'test/{slug}'
+type: channel

@@ -1,0 +1,15 @@
+<nav class="navbar">
+  <div class="container">
+    <a href="{{ siteUrl() }}" class="logo">MyPottery</a>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu"><span class="hamburger"></span></button>
+
+    <ul id="nav-menu" class="nav-links">
+      {% for entry in craft.entries.section('navigation').all() %}
+        <li>
+          <a href="{{ entry.url }}">{{ entry.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

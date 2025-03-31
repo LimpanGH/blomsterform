@@ -1,0 +1,29 @@
+dateModified: 1743421526
+email:
+  fromEmail: linusj555@gmail.com
+  fromName: blomsterform
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    128dc80f-cc87-4da3-b7e0-20ad7ab35a90: 'test entries' # test entries
+    292a9a78-c5fb-4aa7-a61e-67dbabb6bf67: test # test
+    8132dcf7-b400-4716-8ee3-e5a95c6c057b: blomsterform # blomsterform
+    fe6fc921-5409-444c-9b05-4746118e8c68: blomsterform # blomsterform
+plugins:
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: blomsterform
+  schemaVersion: 5.6.0.2
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

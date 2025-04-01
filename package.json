@@ -1,0 +1,30 @@
+{
+  "name": "blomsterform",
+  "version": "1.1.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^4.0.4",
+    "autoprefixer": "^10.4.14",
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.23",
+    "postcss-import": "^15.1.0",
+    "prettier": "^2.4.1",
+    "prettier-plugin-twig-enhancements": "^1.0.1",
+    "prettier-plugin-twig-melody": "^0.4.6",
+    "tailwindcss": "^2.2.19",
+    "vite": "^4.3.8",
+    "vite-plugin-restart": "^0.3.1"
+  },
+  "dependencies": {
+    "@alpinejs/collapse": "^3.10.2",
+    "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/typography": "^0.4.1",
+    "alpinejs": "^3.10.2",
+    "flickity": "^2.2.2",
+    "smoothscroll-polyfill": "^0.4.4"
+  }
+}

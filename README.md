@@ -1,20 +1,25 @@
+## Run project
+In root, run:  
+- `ddev start` to start the DDEV project environment
+- `ddev npm run dev` to start the Vite dev server
+
 ## Installation
 
 1. Create DDEV configuration files:  
    `ddev config --project-type=craftcms --docroot=web`
 
-2. Scaffold the project from the official starter project
+2. Scaffold the project from the official starter project:  
    `-ddev composer create -y "craftcms/craft"`
 
-3. Installed the vite plugin for Craft
+3. Install the vite plugin for Craft:  
    `ddev composer require "nystudio107/craft-vite:^5.0.1" -w && ddev craft plugin/install vite"`
 
-4. Added files and their boilerplates from Wiljagruppen
+4. Added files and their boilerplates from Wiljagruppen:  
    `config/vite.php`  
    `package.json`  
    `vite.config.js`
 
-5. Installed vite on ddev  
+5. Install vite on ddev:  
    `ddev npm install vite --save-dev`
 
 ## Add files

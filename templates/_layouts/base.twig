@@ -9,6 +9,12 @@
     {{ craft.vite.script('/viteEntryPoint.js', false) }}
   </head>
   <body>
-    <h1>Hello from Craft CMS + Vitsadfe!</h1>
+    {% include '_partials/_nav.twig' %}
+    <ul>
+      <li>li 1 from base.twig</li>
+      <li>li 2 from base.twig</li>
+      <li>li 3 from base.twig</li>
+    </ul>
+    <h1>Hello base.twig</h1>
   </body>
 </html>

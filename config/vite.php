@@ -2,17 +2,20 @@
 
 use craft\helpers\App;
 
+$siteUrl = trim(Craft::$app->sites->currentSite->baseUrl, "/");
+
 return [
     'checkDevServer' => true,
-	'devServerInternal' => 'http://localhost:3000',
-    'devServerPublic' =>  Craft::getAlias('@web') . ':3000',
-    'useDevServer' => App::env('ENVIRONMENT') === 'dev',
-    'serverPublic' => Craft::getAlias('@web') . '/dist/',
+    'devServerInternal' => 'http://localhost:3000',
+    'devServerPublic' => $siteUrl . ':3000',
+    'serverPublic' => $siteUrl . '/dist/',
+    // 'useDevServer' => App::env('CRAFT_ENVIRONMENT') === "dev",
+    'useDevServer' => App::env('VITE_USE_DEV_SERVER'),
     'manifestPath' => '@webroot/dist/manifest.json',
-    'errorEntry' => 'src/js/site.js',
+    'errorEntry' => '',
     'cacheKeySuffix' => '',
     'includeReactRefreshShim' => false,
     'includeModulePreloadShim' => true,
     'criticalPath' => '@webroot/dist/criticalcss',
-    'criticalSuffix' => '_critical.min.css',
+    'criticalSuffix' =>'_critical.min.css',
 ];

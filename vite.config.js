@@ -1,44 +1,55 @@
-import legacy from "@vitejs/plugin-legacy";
-import ViteRestart from "vite-plugin-restart";
-import atImport from 'postcss-import';
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
+import { defineConfig } from 'vite';
+import manifestSRI from 'vite-plugin-manifest-sri';
+import path from 'path';
+import viteCompression from 'vite-plugin-compression';
+import ViteRestart from 'vite-plugin-restart';
 
-export default ({ command }) => ({
-  base: command === "serve" ? "" : "/dist/",
-  publicDir: "./web/public/",
+// https://vitejs.dev/config/
+export default defineConfig(({ command }) => ({
+  base: command === 'serve' ? '' : '/dist/',
+
   build: {
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
     manifest: true,
-    outDir: "./web/dist/",
-    target: "es2015",
+    outDir: 'web/dist/',
     rollupOptions: {
       input: {
-        app: "./src/js/site.js",
-        flickity: "./src/js/flickity.js",
-        polyfill: './src/js/polyfill.js'
+        app: 'viteEntryPoint.js',
+      },
+      output: {
+        sourcemap: true,
       },
     },
   },
-  css: {
-    postcss: {
-      plugins: [
-        atImport(),
-        tailwindcss(),
-        autoprefixer()
-      ]
-    }
-  },
+
   plugins: [
-    legacy({
-      targets: ["defaults", "not IE 11"],
+    manifestSRI(),
+    viteCompression({
+      filter: /\.(js|mjs|json|css|map)$/i,
     }),
     ViteRestart({
-      reload: ["./templates/*.twig", "./templates/**/*.twig"],
+      reload: ['templates/**/*'],
     }),
   ],
-  server: {
-    host: "0.0.0.0",
-    port: 3000,
-    strictPort: true
+
+  publicDir: path.resolve(__dirname, 'src/public'),
+
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+      '@css': path.resolve(__dirname, 'src/css'),
+      '@js': path.resolve(__dirname, 'src/js'),
+    },
   },
-});
+
+  server: {
+    allowedHosts: ['emilies-keramik.ddev.site'],
+
+    host: '0.0.0.0',
+    port: 3000,
+    strictPort: true,
+    cors: true
+  },
+}));

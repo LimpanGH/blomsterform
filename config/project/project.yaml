@@ -1,4 +1,4 @@
-dateModified: 1743498049
+dateModified: 1743511266
 email:
   fromEmail: linusj555@gmail.com
   fromName: blomsterform
@@ -8,6 +8,7 @@ meta:
     128dc80f-cc87-4da3-b7e0-20ad7ab35a90: 'test entries' # test entries
     292a9a78-c5fb-4aa7-a61e-67dbabb6bf67: test # test
     8132dcf7-b400-4716-8ee3-e5a95c6c057b: blomsterform # blomsterform
+    52565b67-3aff-4e83-b17a-24b10d00d27f: home # home
     fe6fc921-5409-444c-9b05-4746118e8c68: blomsterform # blomsterform
 plugins:
   vite:

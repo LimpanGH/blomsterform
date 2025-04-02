@@ -1,0 +1,16 @@
+{
+  "viteEntryPoint.css": {
+    "file": "assets/viteEntryPoint-28a21df5.css",
+    "src": "viteEntryPoint.css",
+    "integrity": "sha384-8kSjcLpPN38xO9kaFJ7ff6vu9tDf0ofdfcPlJDNT32LqwMpMhWAdVOntokDY3Ne0"
+  },
+  "viteEntryPoint.js": {
+    "css": [
+      "assets/viteEntryPoint-28a21df5.css"
+    ],
+    "file": "assets/app-1e79887d.js",
+    "isEntry": true,
+    "src": "viteEntryPoint.js",
+    "integrity": "sha384-20AgY/SNZoPIFVvRccQCE6hoiGMFUw5O9AHBJziqcCJyR2Uz/LjDCTjGFrxGE1U0"
+  }
+}

@@ -1,0 +1,16 @@
+currLabel: Tokens
+customIcon: null
+enabled: true
+handle: tokens
+icon: null
+layout: fe9b1f45-7caf-44a1-832d-524d6866b69b # Default
+level: 2
+newWindow: false
+parent: fdfe3f86-2c88-4a57-bfa9-6a91721fa4c3
+prevLabel: Tokens
+prevLevel: 2
+prevParent: fdfe3f86-2c88-4a57-bfa9-6a91721fa4c3
+prevUrl: graphql/tokens
+sortOrder: 6
+type: craft
+url: graphql/tokens

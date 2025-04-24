@@ -1,0 +1,35 @@
+{% extends '_layouts/base.twig' %}
+
+{% block gallery %}
+  {% set entry = craft.entries.section('sectionGalleryPottery').one() %}
+  {# <pre>{{ dump(entry) }}</pre> #}
+
+  <div class="rich-text">{{ entry.fieldRichText|raw }}</div>
+
+  {% if entry %}
+    {% set images = entry.fieldsAssetsBilder.all() %}
+    {# <pre>{{ dump(images) }}</pre> #}
+
+    {% if images|length %}
+      
+     <div id="my-gallery" class="gallery">
+  {% for image in entry.fieldsAssetsBilder.all() %}
+    <div class="gallery-item" data-filename="{{ image.title }}">
+      <a href="{{ image.url }}" 
+         data-pswp-width="{{ image.width }}" 
+         data-pswp-height="{{ image.height }}" 
+         target="_blank">
+        <img class="img-thumbs" src="{{ image.url }}" alt="{{ image.title }}" />
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+      
+    {% else %}
+      <p>No images available</p>
+    {% endif %}
+  {% else %}
+    <p>No gallery entry found</p>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,16 @@
+currLabel: SEO
+customIcon: null
+enabled: true
+handle: seo
+icon: /var/www/html/vendor/ether/seo/src/icon-mask.svg
+layout: fe9b1f45-7caf-44a1-832d-524d6866b69b # Default
+level: 1
+newWindow: false
+parent: null
+prevLabel: SEO
+prevLevel: 1
+prevParent: null
+prevUrl: seo
+sortOrder: 11
+type: plugin
+url: seo

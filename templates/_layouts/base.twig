@@ -5,16 +5,28 @@
     <meta charset="utf-8" />
     <title>Welcome to Craft CMS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="referrer" content="origin-when-cross-origin" />
+    
+  <meta name="referrer" content="origin-when-cross-origin" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     {{ craft.vite.script('/viteEntryPoint.js', false) }}
   </head>
   <body>
     {% include '_partials/_nav.twig' %}
-    <ul>
-      <li>li 1 from base.twig</li>
-      <li>li 2 from base.twig</li>
-      <li>li 3 from base.twig</li>
-    </ul>
-    <h1>Hello base.twig</h1>
+
+    {% block contact %}
+
+    {% endblock %}
+    {% block about %}
+
+    {% endblock %}
+    {% block gallery %}
+
+    {% endblock %}
+    {% block content %}
+
+    {% endblock %}
+
+    {% include '_partials/_footer.twig' %}
   </body>
 </html>

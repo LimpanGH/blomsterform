@@ -8,6 +8,10 @@ import ViteRestart from 'vite-plugin-restart';
 export default defineConfig(({ command }) => ({
   base: command === 'serve' ? '' : '/dist/',
 
+  // css: {
+  //   postcss: path.resolve(__dirname, 'postcss.config.js'),
+  // },
+
   build: {
     commonjsOptions: {
       transformMixedEsModules: true,

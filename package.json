@@ -1,6 +1,7 @@
 {
   "name": "blomsterform",
   "version": "1.1.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "NODE_ENV=production vite build",
@@ -17,9 +18,9 @@
     "prettier-plugin-twig-melody": "^0.4.6",
     "tailwindcss": "^2.2.19",
     "vite": "^4.3.8",
-    "vite-plugin-restart": "^0.3.1",
     "vite-plugin-compression": "^0.5.1",
-    "vite-plugin-manifest-sri": "^0.1.0"
+    "vite-plugin-manifest-sri": "^0.1.0",
+    "vite-plugin-restart": "^0.3.1"
   },
   "dependencies": {
     "@alpinejs/collapse": "^3.10.2",
@@ -27,6 +28,7 @@
     "@tailwindcss/typography": "^0.4.1",
     "alpinejs": "^3.10.2",
     "flickity": "^2.2.2",
+    "photoswipe": "^5.4.4",
     "smoothscroll-polyfill": "^0.4.4"
   }
 }

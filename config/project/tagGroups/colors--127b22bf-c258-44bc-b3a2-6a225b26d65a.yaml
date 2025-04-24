@@ -1,0 +1,41 @@
+fieldLayouts:
+  80018c4f-bce7-422d-9e0e-30474ae09d46:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-04-09T05:55:46+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: f9311839-6f76-4fee-b650-701d901c4db8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5a7c439b-1aa1-4615-8648-7bf7c57ed408
+        userCondition: null
+handle: colors
+name: Colors

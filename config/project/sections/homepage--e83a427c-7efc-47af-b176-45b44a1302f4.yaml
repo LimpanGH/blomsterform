@@ -2,10 +2,10 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 128dc80f-cc87-4da3-b7e0-20ad7ab35a90 # test entries
-handle: test
+    uid: af5c43f4-5cfd-4fb1-862c-861d8b5284f5 # entry-type-home
+handle: homepage
 maxAuthors: 1
-name: test
+name: Homepage
 previewTargets:
   -
     __assoc__:
@@ -23,6 +23,6 @@ siteSettings:
   fe6fc921-5409-444c-9b05-4746118e8c68: # blomsterform
     enabledByDefault: true
     hasUrls: true
-    template: test/_entry.twig
-    uriFormat: 'test/{slug}'
-type: channel
+    template: index.twig
+    uriFormat: __home__
+type: single

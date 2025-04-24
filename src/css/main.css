@@ -1,0 +1,7 @@
+/* @import "./src/css/style.css";
+@import "./src/css/partials/nav.css"; */
+
+@import "./base/_reset.css";
+@import "./base/base.css";
+/* @import "./style.css"; */
+@import "./partials/nav.css";

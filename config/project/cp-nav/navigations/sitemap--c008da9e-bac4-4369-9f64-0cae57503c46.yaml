@@ -1,0 +1,16 @@
+currLabel: Sitemap
+customIcon: null
+enabled: true
+handle: sitemap
+icon: null
+layout: fe9b1f45-7caf-44a1-832d-524d6866b69b # Default
+level: 2
+newWindow: false
+parent: 4ce8040f-88b5-42d4-ad48-82fa9e8e64df
+prevLabel: Sitemap
+prevLevel: 2
+prevParent: 4ce8040f-88b5-42d4-ad48-82fa9e8e64df
+prevUrl: seo/sitemap
+sortOrder: 13
+type: plugin
+url: seo/sitemap

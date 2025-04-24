@@ -1,0 +1,108 @@
+color: null
+fieldLayouts:
+  4317e114-6219-47ea-b133-4d859d9baedf:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-04-22T12:16:44+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b6f04159-47ea-4e66-b50c-3dddf67b4f6b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-22T12:25:27+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 03f0c686-dee5-417a-8897-09453e7c26da # Field-rich-text
+            handle: fieldRichTextHomepageContent
+            includeInCards: false
+            instructions: 'Rich text content that will appear on the homepage.'
+            label: Field-rich-text-homepage-content
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 948ccb64-3e5d-43b1-8255-4f21326b85d2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-23T08:10:12+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: c20c6a70-7bdd-41a9-bffa-a7ddeebff0cf
+            userCondition: null
+          -
+            dateAdded: '2025-04-23T07:54:25+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 03f0c686-dee5-417a-8897-09453e7c26da # Field-rich-text
+            handle: fieldRichTextHomepageContent2
+            includeInCards: false
+            instructions: null
+            label: Field-rich-text-homepage-content2
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 32f41ad6-430c-4a74-8ae1-569ad2ebbbfc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-23T08:12:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e344a845-d8d1-4c54-b3c6-5f29247f0246 # fields-assets-bilder
+            handle: fieldsAssetsBilderHomepage
+            includeInCards: false
+            instructions: null
+            label: fields-assets-bilder-homepage
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 60a448bb-b70d-4add-93e2-65b0576805fb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3fb20ca6-d348-42a1-899f-c1cc444280a1
+        userCondition: null
+handle: entryTypeHome
+hasTitleField: true
+icon: house
+name: entry-type-home
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -167,3 +167,9 @@ These three files work together to configure how Craft CMS and Vite interact in 
 3️⃣ docker-compose.vite.yaml makes sure Vite’s server is accessible inside the DDEV container.
 
 🔗 Without these files working together, Vite wouldn't serve assets properly in Craft CMS inside Docker!
+
+## Maintenance
+- Check for updates: `ddev craft update`
+- Run `ddev craft update all`  to perform the update.
+
+

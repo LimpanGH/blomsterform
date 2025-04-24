@@ -1,26 +1,108 @@
-dateModified: 1743511266
+dateModified: 1745482842
+elementSources:
+  craft\elements\Asset:
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'volume:7ac4c5af-1f1c-4dcd-b24b-7b376dea0fc5'
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+    -
+      key: temp
+      type: native
+    -
+      condition:
+        class: craft\elements\conditions\assets\AssetCondition
+        elementType: craft\elements\Asset
+        fieldContext: global
+      defaultSort:
+        - id
+        - asc
+      defaultViewMode: ''
+      key: 'custom:b134b243-6bfb-435a-bf5c-a6913736f6ae'
+      label: general
+      tableAttributes: '-'
+      type: custom
 email:
   fromEmail: linusj555@gmail.com
   fromName: blomsterform
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  filesystemBilder:
+    hasUrls: true
+    name: filesystem-bilder
+    settings:
+      path: '@webroot/assets/bilder'
+    type: craft\fs\Local
+    url: $PRIMARY_SITE_URL/assets/bilder
 meta:
   __names__:
-    128dc80f-cc87-4da3-b7e0-20ad7ab35a90: 'test entries' # test entries
-    292a9a78-c5fb-4aa7-a61e-67dbabb6bf67: test # test
+    03f0c686-dee5-417a-8897-09453e7c26da: Field-rich-text # Field-rich-text
+    9e21335e-4679-42fb-bf9e-838ff88dfea8: Section-gallery-pottery # Section-gallery-pottery
+    127b22bf-c258-44bc-b3a2-6a225b26d65a: Colors # Colors
     8132dcf7-b400-4716-8ee3-e5a95c6c057b: blomsterform # blomsterform
-    52565b67-3aff-4e83-b17a-24b10d00d27f: home # home
+    2554616c-98b6-4ba9-964f-2cfc6332f9f3: Simple # Simple
+    af5c43f4-5cfd-4fb1-862c-861d8b5284f5: entry-type-home # entry-type-home
+    ced1e00a-1f48-4f82-8803-a84f2759c20a: assets-volume-bilder # assets-volume-bilder
+    d584d96e-8de8-47ab-bf04-0237154fe77c: category-group-bowls # category-group-bowls
+    e83a427c-7efc-47af-b176-45b44a1302f4: Homepage # Homepage
+    e344a845-d8d1-4c54-b3c6-5f29247f0246: fields-assets-bilder # fields-assets-bilder
+    e3776bfe-fc1d-4eb0-a876-1ee5a20f9c7f: Field-pottery-type # Field-pottery-type
+    e2199001-481b-4e26-9baf-fd12641948c8: 'Public Schema' # Public Schema
     fe6fc921-5409-444c-9b05-4746118e8c68: blomsterform # blomsterform
+    fe9b1f45-7caf-44a1-832d-524d6866b69b: Default # Default
+    ff9b228c-95c3-43fa-bdeb-3bd54a2a2fce: entry-type-bilder # entry-type-bilder
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  cp-nav:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.11
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  oembed:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 4.0.0
+  venveo-bulk-edit:
+    edition: standard
+    enabled: true
+    schemaVersion: 4.0.0
   vite:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  wordsmith:
+    edition: standard
+    enabled: true
+    schemaVersion: 0.0.0.0
 system:
   edition: solo
   live: true
   name: blomsterform
-  schemaVersion: 5.6.0.2
-  timeZone: America/Los_Angeles
+  retryDuration: null
+  schemaVersion: 5.7.0.3
+  timeZone: Europe/Stockholm
 users:
   allowPublicRegistration: false
   defaultGroup: null

@@ -1,6 +1,6 @@
-color: red
+defaultPlacement: end
 fieldLayouts:
-  d897fc90-5a3a-4a8d-9737-ede8247ed2a0:
+  f78689e4-8c9a-453c-88c4-0c153a9c6bf3:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-03-31T09:12:12+00:00'
+            dateAdded: '2025-04-22T08:10:00+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -25,27 +25,26 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            required: true
+            requirable: false
             size: null
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 06a7daf2-9075-45f2-94b4-610ea2c4fe01
+            type: craft\fieldlayoutelements\TitleField
+            uid: 3d69e7f7-6905-439f-a20c-76ade40003a7
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: c294ed1d-415d-4fe3-83d5-52ae601da741
+        uid: 684d7d10-7a22-4b27-abbb-683681b536ed
         userCondition: null
-handle: testEntries
-hasTitleField: true
-icon: a
-name: 'test entries'
-showSlugField: true
-showStatusField: true
-slugTranslationKeyFormat: null
-slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
-titleTranslationMethod: site
+handle: categoryGroupBowls
+name: category-group-bowls
+siteSettings:
+  fe6fc921-5409-444c-9b05-4746118e8c68: # blomsterform
+    hasUrls: true
+    template: category-group-bowls/_category.twig
+    uriFormat: 'category-group-bowls/{slug}'
+structure:
+  maxLevels: null
+  uid: d107f115-d54b-4d67-97d6-68f2a33d5e9b
